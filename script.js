@@ -35,7 +35,7 @@ function playRound(playerSelection) {
                 result = ("You lost! " + computerSelection + " beats " + playerSelection + "."
                         +"<br><br>Player score: " + playerScore + "<br>Computer score: " + computerScore)
                 if(computerScore === 5){
-                    result += "You lost the game! Refresh the page to play another round!"
+                    result += "<br>You lost the game! Refresh the page to play another round!"
                     disableButtons()
                 }
             }
