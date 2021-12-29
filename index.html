@@ -4,42 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
     <title>Rock Paper Scissors</title>
 </head>
 <body>
-<script>
-const options = ["Rock", "Paper", "Scissors"];
-    function computerPlay () {
-        return options[Math.floor(Math.random()*options.length)];
-    }
-    function playRound (playerSelection, computerSelection) {
-        computerSelection = computerPlay().toLowerCase();
-        playerSelection = playerSelection.toLowerCase();
-        if (playerSelection === computerSelection) {
-            return "It's a tie!";
-        }else if (computerSelection === "rock" && playerSelection === "scissors") {
-            return "You lose! Rock beats Sciccors!";
-        }else if (computerSelection === "paper" && playerSelection === "rock") {
-            return "You lose! Paper beats Rock!";
-        }else if (computerSelection === "scissors" && playerSelection === "paper") {
-            return "You lose! Scissors beats Paper!";
-        }else if (playerSelection === "rock" && computerSelection === "scissors") {
-            return "You won! Rock beats Scissors!";
-        }else if (playerSelection === "paper" && computerSelection === "rock") {
-            return "You won! Paper beats Rock!";
-        }else if (playerSelection === "scissors" && computerSelection === "paper") {
-            return "You won! Scissors beats Paper!";
-        }else {
-            return "There was an error!";
-        }
-    }
-    let playerSelection = prompt("Choose your weapon!");
-    const computerSelection = computerPlay();
-    
-    console.log(playRound(playerSelection, computerSelection));
-    
-    
-    
-</script>
+    <h1>ROCK PAPER SCISSORS</h1>
+    <h3>Choose your weapon!</h3>
+    <div class="options">
+        <button class="option" type="button" value="Rock">✊</button>
+        <button class="option" type="button" value="Paper">✋</button>
+        <button class="option" type="button" value="Scissors">🖖</button>
+    </div>
+    <div id="result"></div>
+    <script src="script.js"></script>
 </body>
 </html>

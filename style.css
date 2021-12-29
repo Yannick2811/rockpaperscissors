@@ -1,6 +1,46 @@
-body {
-    background-color: black;
+body{
+    background-color: #12110e;
+    font-family: sans-serif;
 }
-h1 {
-    color: red;
+
+h1{
+    text-align: center;
+    color: #fff1c7;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+h3{
+    text-align: center;
+    margin-bottom: 6rem;
+    color: #fff1c7
+}
+
+ 
+.options{
+    display: flex;
+    justify-content: center;
+    gap: 7rem;
+    margin-bottom: 6rem;
+}
+
+.option{
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 7rem;
+    transition: 150ms;
+}
+
+.option:hover{
+    cursor: pointer;
+    transform: scale(1.5);
+}
+
+#result{
+    color: #fff1c7;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    text-align: center;
 }
